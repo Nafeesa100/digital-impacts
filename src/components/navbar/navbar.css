@@ -1,0 +1,60 @@
+.navbar {
+    width: 100%;
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 170px;
+    /* adjust based on your logo */
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    color: #008AD8;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+.nav-btn a {
+    background: #008AD8;
+    color: white;
+    padding: 10px 28px;
+    font-size: 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-btn a:hover {
+    background: #006bb0;
+}
+
+/* Blue strip under navbar */
+.nav-bottom-bar {
+    width: 100%;
+    height: 15px;
+    background: #008AD8;
+}

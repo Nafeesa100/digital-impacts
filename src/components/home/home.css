@@ -1,0 +1,170 @@
+
+.home-hero {
+    width: 100%;
+    background: #ffffff;
+    padding: 12px 0 40px;
+
+    box-sizing: border-box;
+}
+
+
+.hero-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+
+.hero-image {
+    flex: 1 1 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 700px;
+  
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+
+.hero-content {
+    flex: 1 1 48%;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.kicker {
+    margin: 0;
+    font-size: 38px;
+    color: #000;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+
+.hero-title {
+    margin: 6px 0 6px;
+    font-size: 54px;
+    line-height: 1.02;
+    font-weight: 800;
+    color: #000;
+}
+
+.hero-title .accent {
+    color: #1296d6;
+
+    display: inline-block;
+}
+
+
+.welcome {
+    margin: 10px 0 14px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1296d6;
+}
+
+.divider {
+    height: 3px;
+    width: 100%;
+    max-width: 520px;
+    background: #1296d6;
+    margin: 10px 0 22px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04) inset;
+}
+
+
+.hero-paragraph {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #111;
+    max-width: 640px;
+    margin: 0 0 70px 0;
+}
+
+.message-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(0);
+    background: #1296d6;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 28px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 18px rgba(18, 150, 214, 0.18);
+    transition: background 0.18s ease, transform 0.12s ease;
+}
+
+.message-btn:hover {
+    background: #0f86c0;
+    transform: translateY(-3px);
+}
+
+/* Responsive behaviour */
+@media (max-width: 980px) {
+    .hero-inner {
+        gap: 20px;
+        padding: 8px 20px;
+    }
+
+    .hero-image,
+    .hero-content {
+        flex-basis: 100%;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .kicker {
+        font-size: 28px;
+    }
+
+    .welcome {
+        font-size: 22px;
+    }
+
+    .hero-paragraph {
+        font-size: 16px;
+    }
+
+    .message-btn {
+        position: static;
+        display: inline-block;
+        margin-top: 18px;
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .kicker {
+        font-size: 22px;
+    }
+
+    .welcome {
+        font-size: 18px;
+    }
+
+    .hero-paragraph {
+        font-size: 15px;
+    }
+}
